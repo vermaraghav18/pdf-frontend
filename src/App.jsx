@@ -93,7 +93,7 @@ function App() {
                 <div className="hero-blob-container">
                   <div className="hero-blob hero-blob-purple"></div>
                   <div className="hero-blob hero-blob-pink"></div>
-                  <img src="/src/assets/images/herosection.png" alt="PDF Tools UI" className="hero-image" />
+                  <img src="/public/images/herosection.png" alt="PDF Tools UI" className="hero-image" />
                 </div>
               </motion.div>
 
