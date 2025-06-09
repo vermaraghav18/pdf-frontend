@@ -1,0 +1,207 @@
+/* ✅ CompressPdfPage.css — Styled Like Merge & Split Tools */
+
+/* Hero Container */
+.compress-hero-container {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to bottom right, #f6f9ff, #ffffff);
+  padding-top: 0.1px;
+  padding-bottom: 0.1px;
+  border-radius: 20px;
+  margin: 2rem;
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.04);
+  z-index: 0;
+}
+
+/* Floating Icons */
+.compress-float-icon {
+  position: absolute;
+  opacity: 0.1;
+  z-index: 0;
+  width: 300px;
+  height: 300px;
+  animation: floatLarge 10s ease-in-out infinite;
+  filter: drop-shadow(0 0 30px rgba(0, 0, 0, 0.1));
+}
+
+.float-top-left {
+  top: -40px;
+  left: -30px;
+  animation-delay: 0s;
+}
+
+.float-bottom-right {
+  bottom: -40px;
+  right: -30px;
+  animation-delay: 3s;
+}
+
+.compress-icon-floating {
+  width: 80px;
+  height: 80px;
+  animation: float 4s ease-in-out infinite;
+  z-index: 1;
+}
+
+/* Animations */
+@keyframes floatLarge {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(5deg);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(-5deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(5deg);
+  }
+}
+
+/* Page Wrapper */
+.compress-page {
+  font-family: 'Inter', sans-serif;
+  background: transparent;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.compress-main {
+  max-width: 1140px;
+  margin: 2rem auto;
+  padding: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Layout */
+.compress-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.compress-left {
+  flex: 1 1 45%;
+  min-width: 300px;
+}
+
+.compress-right {
+  flex: 1 1 45%;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+@media (max-width: 768px) {
+  .compress-layout {
+    flex-direction: column;
+  }
+
+  .compress-left,
+  .compress-right {
+    width: 100%;
+  }
+}
+
+/* Title */
+.compress-title-section {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.compress-title-section h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #1f2937;
+}
+
+/* Tool Instructions */
+.tool-info {
+  background-color: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  margin-bottom: 2rem;
+  z-index: 1;
+}
+
+.tool-info h2 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #111827;
+}
+
+.tool-instructions {
+  font-size: 1rem;
+  color: #374151;
+  line-height: 1.6;
+}
+
+/* Input + Select Styling */
+.compress-dropzone input[type="file"],
+.compress-dropzone select {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #c7d2fe;
+  font-size: 0.95rem;
+  color: #111827;
+  width: 90%;
+  background: white;
+}
+
+/* Compress Zone */
+.compress-dropzone {
+  border: 2px dashed #a5b4fc;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  background: linear-gradient(to bottom, #eef2ff, #f5f7ff);
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 24px rgba(99, 102, 241, 0.05);
+}
+
+.compress-dropzone:hover {
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+  background-color: #e0e7ff;
+}
+
+/* Buttons */
+.primary-btn {
+  background-color: #4f46e5;
+  color: #ffffff;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  transition: background 0.3s ease;
+}
+
+.primary-btn:hover {
+  background-color: #4338ca;
+}
+
+/* Messages */
+.compress-message {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #1f2937;
+}

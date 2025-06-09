@@ -1,0 +1,136 @@
+/* 🧱 Hero Container Styling */
+.tool-hero-container {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to bottom right, #f6f9ff, #ffffff);
+  padding-top: 0.1px;
+  padding-bottom: 0.1px;
+  border-radius: 20px;
+  margin: 2rem;
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.04);
+  z-index: 0;
+}
+
+/* 🌟 Main Layout Wrapper */
+.tool-main {
+  max-width: 1140px;
+  margin: 2rem auto;
+  padding: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* 📐 Flex Layout */
+.tool-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.tool-left {
+  flex: 1 1 45%;
+  min-width: 300px;
+}
+
+.tool-right {
+  flex: 1 1 45%;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+  .tool-layout {
+    flex-direction: column;
+  }
+
+  .tool-left,
+  .tool-right {
+    width: 100%;
+  }
+}
+
+/* 🧩 Title Section */
+.tool-title-section {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.tool-title-section h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #1f2937;
+}
+
+.tool-icon-floating {
+  width: 70px;
+  height: 70px;
+  animation: float 4s ease-in-out infinite;
+}
+
+/* 💬 Tool Info */
+.tool-info {
+  background-color: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  margin-bottom: 2rem;
+  z-index: 1;
+}
+
+.tool-info h2 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #111827;
+}
+
+.tool-instructions {
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+/* 📤 Drop Zone */
+.drop-zone {
+  border: 2px dashed #a5b4fc;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #eef2ff;
+  margin: 1rem 0;
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+}
+
+/* 📁 Input Field */
+.drop-zone input[type="file"] {
+  display: block;
+  margin: 1rem auto;
+}
+
+/* 🧵 Primary Button */
+.primary-btn {
+  background-color: #4f46e5;
+  color: #ffffff;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+/* 🌀 Animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
